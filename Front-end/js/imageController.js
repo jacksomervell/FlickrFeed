@@ -7,14 +7,18 @@ angular
   function ImageController($http){
     var self = this
     self.searchTerm = 'fish'
+    self.data
 
+
+//makes the call to the proxy server which retrieves the data from Flickr:
     self.getData = function(){
-      $http
-        .get('http://api.flickr.com/services/feeds/photos_public.gne?tags=' + self.searchTerm + '&tagmode=all&format=json')
-        .then(function(response){
-      console.log(response)
-      response.addHeader("Access-Control-Allow-Origin", "*");
-      console.log(self.searchTerm)
-      })
-    }
+        $http.jsonp("http://api.flickr.com/services/feeds/photos_public.gne?tags=" + self.searchTerm + "&tagmode=all&format=json&jsoncallback=JSON_CALLBACK")
+          .success(function(data) {
+
+              self.data = data.items;
+              console.log(self.data)
+
+            })
+
   }
+}
