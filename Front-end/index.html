@@ -11,10 +11,10 @@
 
 </head>
 <body>
-  <div class = 'container' ng-controller = "ImageController as images">
-    <div ng-init = 'images.getData()'>hello</div>
-    <button ng-click='images.getData()'></button>
-    {{images.data}}
+  <div ng-init = 'images.getData()'class = 'container' ng-controller = "ImageController as images">
+    <div  ng-repeat= 'image in images.data'>
+    {{image.title}}
+    </div>
   </div>
 
    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-animate.min.js"></script>
