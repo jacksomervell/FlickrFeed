@@ -31,3 +31,11 @@
   overflow: hidden;
   border: 1px solid black;
 }
+
+.info-container a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  bottom: 10px;
+  margin-right: 10px;
+}
