@@ -12,12 +12,15 @@
   float: left;
   width: 150px;
   height: 150px;
+  margin-right: 10px;
 }
 
-.info-container h1 h2 {
-  display: inline-block;
-  height: 20px;
-  text-overflow: ellipsis;
+.info-container h1 {
+  display: block;
+  max-height: 50px;
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow:ellipsis;
 }
 
 .info-container {
@@ -25,4 +28,5 @@
   height: 150px;
   color: white;
   overflow: hidden;
+  border: 1px solid black;
 }

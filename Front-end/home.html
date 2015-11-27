@@ -2,8 +2,9 @@
     <div class= 'info-container'  ng-repeat= 'image in images.data'>
       <img src='{{image.media.m}}'>
       <h1 class="md-display-1">{{image.title}}</h1>
+      <h2 class="md-title">Published: {{image.published}}<h2>
       <h2 class="md-title">{{image.author}}<h2>
-      <h2 class="md-title">{{image.published}}<h2>
+      
       <a class = "md-title" href="{{image.link}}"> View on Flickr </a>
     </div>
 </div>
