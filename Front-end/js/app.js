@@ -1,5 +1,5 @@
 angular
-  .module('FlickrApp', ['ui.router', 'ngMaterial'])
+  .module('FlickrApp', ['ui.router', 'ngMaterial', 'angularMoment'])
   .config(MainRouter)
 
 function MainRouter($stateProvider, $urlRouterProvider) {
@@ -10,6 +10,11 @@ function MainRouter($stateProvider, $urlRouterProvider) {
     .state('home', {
       url: '/',
       templateUrl: 'home.html'
+    })
+
+    .state('details', {
+      url: '/details',
+      templateUrl: 'details.html'
     })
 
 }
