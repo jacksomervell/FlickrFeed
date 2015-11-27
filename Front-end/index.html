@@ -11,11 +11,9 @@
 
 </head>
 <body>
-  <div ng-init = 'images.getData()'class = 'container' ng-controller = "ImageController as images">
-    <div  ng-repeat= 'image in images.data'>
-    {{image.title}}
-    </div>
-  </div>
+
+<ui-view>
+</ui-view>
 
    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-animate.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-aria.min.js"></script>
