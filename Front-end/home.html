@@ -1,8 +1,9 @@
  <div ng-init = 'images.getData()'class = 'container' ng-controller = "ImageController as images">
     <div class= 'info-container'  ng-repeat= 'image in images.data'>
-    {{image.title}}
-    {{image.author}}
-    <img src='{{image.media.m}}'>
-    {{image.published}}
+      <img src='{{image.media.m}}'>
+      <h1 class="md-display-1">{{image.title}}</h1>
+      <h2 class="md-title">{{image.author}}<h2>
+      <h2 class="md-title">{{image.published}}<h2>
+      <a class = "md-title" href="{{image.link}}"> View on Flickr </a>
     </div>
-  </div>
+</div>

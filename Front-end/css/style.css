@@ -1,0 +1,28 @@
+.container {
+  display: block;
+  width: 750px;
+  height: 400px;
+  overflow-y: scroll;
+  margin: 0 auto;
+  background-color: blue;
+}
+
+.info-container img {
+  display: inline-block;
+  float: left;
+  width: 150px;
+  height: 150px;
+}
+
+.info-container h1 h2 {
+  display: inline-block;
+  height: 20px;
+  text-overflow: ellipsis;
+}
+
+.info-container {
+  display: block;
+  height: 150px;
+  color: white;
+  overflow: hidden;
+}
