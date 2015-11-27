@@ -16,7 +16,7 @@ angular
           .success(function(data) {
 
               self.data = data.items;
-              console.log(self.data)
+              console.log(self.data[1].description.split('"')[1])
 
             })
 
