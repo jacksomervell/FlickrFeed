@@ -13,8 +13,21 @@ function MainRouter($stateProvider, $urlRouterProvider) {
     })
 
     .state('details', {
-      url: '/details',
-      templateUrl: 'details.html'
+      url: '/:imageTitle/details',
+      templateUrl: 'details.html',
+      controller: function($scope, $stateParams) {
+            $scope.title = $stateParams.imageTitle;
+            $scope.picture = $stateParams.picture;
+            $scope.author = $stateParams.author;
+            $scope.published = $stateParams.published;
+            $scope.tags = $stateParams.tags;
+        },
+        params: {
+          picture: null,
+          author: null,
+          published: null,
+          tags: null
+        }
     })
 
 }
