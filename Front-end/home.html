@@ -14,11 +14,11 @@
 
       <img ui-sref= 'details({ imageTitle: "{{image.title}}", picture: "{{image.media.m}}", published: "{{image.published}}", tags: "{{image.tags}}", author : "{{image.author}}", link: "{{image.link}}", id: "{{image.author_id}}" })' src="{{image.media.m}}">
 
-      <h1 ui-sref= 'details({ imageTitle: "{{image.title}}", picture: "{{image.media.m}}", published: "{{image.published}}", tags: "{{image.tags}}", author : "{{image.author}}", link: "{{image.link}}", id: "{{image.author_id}}" })' class="md-headline">{{image.title}}</h1>
+      <h1 ui-sref= 'details({ imageTitle: "{{image.title}}", picture: "{{image.media.m}}", published: "{{image.published}}", tags: "{{image.tags}}", author : "{{image.author}}", link: "{{image.link}}", id: "{{image.author_id}}" })' class="md-headline homepage-link">{{image.title}}</h1>
 
       <h2 class="md-title" >Published: {{image.published.split('T')[0]}} <h2>
 
-      <a class="md-body-2" href="{{image.description.split('&quot')[1]}}" >Author: {{image.author.split(' ')[1].split('(')[1].split(')')[0]}}<span><a class = "md-body-2" href="{{image.link}}"> View on Flickr </a></span>
+      <a class="md-body-2 homepage-link" href="{{image.description.split('&quot')[1]}}" >Author: {{image.author.split(' ')[1].split('(')[1].split(')')[0]}}<span><a class = "md-body-2 homepage-link" href="{{image.link}}"> View on Flickr </a></span>
 
     </div>
   </div>

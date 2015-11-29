@@ -2,20 +2,19 @@
 <div>
   <h1 class = "md-display-2 details-header">{{title}}</h1>
    <md-button ui-sref="home" class="md-fab back-button" aria-label="Go back">
-     <img class="md-button-image" src="https://cdn0.iconfinder.com/data/icons/typicons-2/24/arrow-back-512.png">
+     <img class="md-button-image" src="images/blackarrow.png">
     </md-button>
   </div>
   
   <div class= "subheader-container">
-    <a ng-href= "http://www.flickr.com/people/{{id}}"> <span class = "md-title details-subheader" > Author: {{author.split(' ')[1].split('(')[1].split(')')[0]}}</span> </a> <span class = "md-title details-subheader"> | Published: {{published.split('T')[0]}}</span>
-
+    <a ng-href= "http://www.flickr.com/people/{{id}}"> <span class = "md-title details-subheader" > <strong>Author:</strong> {{author.split(' ')[1].split('(')[1].split(')')[0]}}</span> </a> <span class = "md-title details-subheader"> | <strong>Published:</strong> {{published.split('T')[0]}}</span>
   </div>
 
   <a ng-href = "{{link}}"><img class= "details-image" src = "{{picture}}"></a>
 
 <div class = "description">
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  <p> Tags: {{tags}} </p>
+  <p> <strong>Tags:</strong> {{tags}} </p>
 </div>
 
 </div>
