@@ -16,23 +16,19 @@ angular
           .success(function(data) {
 
               self.data = data.items;
-              console.log("hello")
               console.log(self.data)
               console.log(self.search)
             })
 
   }
 
-  //   if(self.search === undefined){
-  //   self.search = "";
-  //   self.getData();
-  //   console.log("banana")
-  // }
-
+  if(self.search === undefined){
+    self.search = "";
+    self.getData();
+  }
 
     self.change = function(){
-      self.getData()
-    console.log('booboo')
+      setTimeout(self.getData(), 300)
   };
   
 }
