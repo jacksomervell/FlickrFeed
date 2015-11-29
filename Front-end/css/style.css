@@ -57,6 +57,16 @@ body {
 .details-header {
   margin-bottom: 5px;
   margin-top: 10px;
+  max-height: 50px;
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow:ellipsis;
+}
+
+.details-header:hover{
+  overflow: visible;
+  white-space: normal;
+  max-height: 300px;
 }
 
 .subheader-container {
