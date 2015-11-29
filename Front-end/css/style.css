@@ -69,11 +69,11 @@ body {
   width: 500px;
 }
 
-.details-header:active{
+/*.details-header:active{
   overflow: visible;
   white-space: normal;
   max-height: 300px;
-}
+}*/
 
 .subheader-container {
   margin-bottom: 10px;
