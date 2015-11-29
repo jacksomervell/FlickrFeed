@@ -6,6 +6,10 @@
   margin: 0 auto;
   background-color: blue;
   color: white;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  border: 1px solid black;
 }
 
 .details {
@@ -34,7 +38,7 @@
   height: 150px;
   color: white;
   overflow: hidden;
-  border: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 .info-container a {
@@ -70,5 +74,13 @@
 }
 
 .searcher {
+  display: block;
   background-color: white;
+  width: 750px;
+  margin: 0 auto
+}
+
+.title {
+  font-family: 'Pacifico', cursive;
+  text-align: center;
 }
