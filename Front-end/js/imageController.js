@@ -18,6 +18,7 @@ angular
               console.log(self.data[1].description.split('"')[1])
               console.log(moment(self.data[1].published)._d) 
               self.date = moment(self.data[1].published)._d
+              console.log(self.data[1].author.split(' ')[1].split('(')[1].split(')')[0])
 
             })
 

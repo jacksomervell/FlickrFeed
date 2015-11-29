@@ -3,6 +3,6 @@
       <img ui-sref= 'details({ imageTitle: "{{image.title}}", picture: "{{image.media.m}}", published: "{{image.published}}", tags: "{{image.tags}}" })' src="{{image.media.m}}">
       <h1 ui-sref='details' class="md-display-1">{{image.title}}</h1>
       <h2 class="md-title" >Published: {{image.published}} <h2>
-      <a class="md-body-2" href="{{image.description.split('&quot')[1]}}" >Photo author<span><a class = "md-body-2" href="{{image.link}}"> View on Flickr </a>
+      <a class="md-body-2" href="{{image.description.split('&quot')[1]}}" >Author: {{image.author.split(' ')[1].split('(')[1].split(')')[0]}}<span><a class = "md-body-2" href="{{image.link}}"> View on Flickr </a>
     </div>
 </div>
