@@ -3,6 +3,9 @@
   
   <div class= "subheader-container">
     <a ng-href= "http://www.flickr.com/people/{{id}}"> <span class = "md-title details-subheader" > Author: {{author.split(' ')[1].split('(')[1].split(')')[0]}}</span> </a> <span class = "md-title details-subheader"> | Published: {{published.split('T')[0]}}</span>
+    <md-button class="md-fab" aria-label="Eat cake">
+      <md-icon md-svg-src="img/icons/cake.svg"></md-icon>
+    </md-button>
   </div>
 
   <a ng-href = "{{link}}"><img class= "details-image" src = "{{picture}}"></a>

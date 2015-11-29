@@ -1,15 +1,15 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .container {
   display: block;
   width: 750px;
   height: 400px;
   overflow-y: scroll;
   margin: 0 auto;
-  background-color: blue;
-  color: white;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  border: 1px solid black;
+  background: #efeae2;
+  color: grey;
 }
 
 .details {
@@ -22,6 +22,7 @@
   width: 150px;
   height: 150px;
   margin-right: 10px;
+  border-right: 1px solid white;
 }
 
 .info-container h1 {
@@ -31,18 +32,18 @@
   overflow: hidden; 
   text-overflow:ellipsis;
   margin-bottom: 10px;
+  color: black;
 }
 
 .info-container {
   display: block;
   height: 150px;
-  color: white;
   overflow: hidden;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
 }
 
 .info-container a {
-  color: white;
+  color: grey;
   text-decoration: none;
   position: relative;
   bottom: 10px;
@@ -64,6 +65,7 @@
 
 .details-image {
   width: 200px;
+  height: 200px;
   margin-top: 16px;
 }
 
@@ -81,6 +83,5 @@
 }
 
 .title {
-  font-family: 'Pacifico', cursive;
   text-align: center;
 }
