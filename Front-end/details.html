@@ -1,11 +1,14 @@
 <div class= "container details">
+<div>
   <h1 class = "md-display-2 details-header">{{title}}</h1>
+   <md-button ui-sref="home" class="md-fab back-button" aria-label="Go back">
+     <img class="md-button-image" src="https://cdn0.iconfinder.com/data/icons/typicons-2/24/arrow-back-512.png">
+    </md-button>
+  </div>
   
   <div class= "subheader-container">
     <a ng-href= "http://www.flickr.com/people/{{id}}"> <span class = "md-title details-subheader" > Author: {{author.split(' ')[1].split('(')[1].split(')')[0]}}</span> </a> <span class = "md-title details-subheader"> | Published: {{published.split('T')[0]}}</span>
-    <md-button class="md-fab" aria-label="Eat cake">
-      <md-icon md-svg-src=></md-icon>
-    </md-button>
+
   </div>
 
   <a ng-href = "{{link}}"><img class= "details-image" src = "{{picture}}"></a>

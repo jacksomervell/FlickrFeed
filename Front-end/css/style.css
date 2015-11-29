@@ -61,6 +61,8 @@ body {
   white-space: nowrap; 
   overflow: hidden; 
   text-overflow:ellipsis;
+  display: inline-block;
+  width: 500px;
 }
 
 .details-header:hover{
@@ -94,4 +96,21 @@ body {
 
 .title {
   text-align: center;
+}
+
+.md-button.md-fab {
+  background-color: white;
+  float: right;
+  margin-right: 60px;
+  margin-top: 20px;
+
+}
+
+a.md-button.md-default-theme.md-fab, a.md-button.md-fab, .md-button.md-default-theme.md-fab, .md-button.md-fab {
+  background-color: white;
+}
+
+.md-button-image {
+  width: 35px;
+  margin-top: 10px;
 }
