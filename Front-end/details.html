@@ -1,11 +1,14 @@
 <div class= "container">
-  <h1 class = "md-display-2">{{title}}</h1>
-  <a class = "md-title" ng-href= "http://www.flickr.com/people/{{id}}"> Author: {{author.split(' ')[1].split('(')[1].split(')')[0]}} </a> | Published: {{published}} </h1>
-  <a ng-href = "{{link}}"><img src = "{{picture}}"></a>
-  <h1>{{description}}</h1>
+  <h1 class = "md-display-2 details-header">{{title}}</h1>
+  
+  <div class= "subheader-container">
+    <a ng-href= "http://www.flickr.com/people/{{id}}"> <span class = "md-title details-subheader" > Author: {{author.split(' ')[1].split('(')[1].split(')')[0]}}</span> </a> <span class = "md-title details-subheader"> | Published: {{published}}</span>
+  </div>
+
+  <a ng-href = "{{link}}"><img class= "details-image" src = "{{picture}}"></a>
   <h1>{{tags}}</h1>
 
-
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 
 </div>
