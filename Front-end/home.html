@@ -14,7 +14,7 @@
 
       <img ui-sref= 'details({ imageTitle: "{{image.title}}", picture: "{{image.media.m}}", published: "{{image.published}}", tags: "{{image.tags}}", author : "{{image.author}}", link: "{{image.link}}", id: "{{image.author_id}}" })' src="{{image.media.m}}">
 
-      <h1 ui-sref='details' class="md-headline">{{image.title}}</h1>
+      <h1 ui-sref= 'details({ imageTitle: "{{image.title}}", picture: "{{image.media.m}}", published: "{{image.published}}", tags: "{{image.tags}}", author : "{{image.author}}", link: "{{image.link}}", id: "{{image.author_id}}" })' class="md-headline">{{image.title}}</h1>
 
       <h2 class="md-title" >Published: {{image.published.split('T')[0]}} <h2>
 

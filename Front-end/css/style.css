@@ -23,6 +23,7 @@ body {
   height: 150px;
   margin-right: 10px;
   border-right: 1px solid white;
+  cursor: pointer;
 }
 
 .info-container h1 {
@@ -33,6 +34,7 @@ body {
   text-overflow:ellipsis;
   margin-bottom: 10px;
   color: black;
+  cursor: pointer;
 }
 
 .info-container {
@@ -57,9 +59,10 @@ body {
 .details-header {
   margin-bottom: 5px;
   margin-top: 10px;
-  max-height: 50px;
+  max-height: 80px;
   white-space: nowrap; 
-  overflow: hidden; 
+  overflow: hidden;
+  color: black; 
   text-overflow:ellipsis;
   display: inline-block;
   width: 500px;
@@ -96,13 +99,14 @@ body {
 
 .title {
   text-align: center;
+  margin-top: 0px;
+  padding-top: 15px;
 }
 
 .md-button.md-fab {
   background-color: white;
   float: right;
   margin-right: 60px;
-  margin-top: 20px;
 
 }
 
@@ -110,7 +114,30 @@ a.md-button.md-default-theme.md-fab, a.md-button.md-fab, .md-button.md-default-t
   background-color: white;
 }
 
+md-input-container:not(.md-input-invalid).md-input-focused .md-input {
+    border-color: grey;
+}
+
+md-input-container:not(.md-input-invalid).md-input-focused label {
+  color: grey;
+}
+
+md-input-container label {
+  color: grey;
+}
 .md-button-image {
   width: 35px;
   margin-top: 10px;
+}
+
+.home-header {
+  background: #efeae2;
+  height: 105px;
+}
+.home-header img {
+  width: 80px;
+  position: relative;
+  position: absolute;
+  top: 10px;
+  left: 30px;
 }
