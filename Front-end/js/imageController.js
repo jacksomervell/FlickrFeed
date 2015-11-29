@@ -6,22 +6,33 @@ angular
 
   function ImageController($http){
     var self = this
-    self.searchTerm = 'fish'
+    var pendingTask
+    self.search
     self.data
+    self.change
 
     self.getData = function(){
-        $http.jsonp("http://api.flickr.com/services/feeds/photos_public.gne?tags=" + self.searchTerm + "&tagmode=all&format=json&jsoncallback=JSON_CALLBACK")
+        $http.jsonp("http://api.flickr.com/services/feeds/photos_public.gne?tags=" + self.search + "&tagmode=all&format=json&jsoncallback=JSON_CALLBACK")
           .success(function(data) {
 
               self.data = data.items;
+              console.log("hello")
               console.log(self.data)
-              console.log(self.data[1].description.split('"')[1])
-              console.log(moment(self.data[1].published)._d) 
-              self.date = moment(self.data[1].published)._d
-              console.log(self.data[1].author.split(' ')[1].split('(')[1].split(')')[0])
-
+              console.log(self.search)
             })
 
   }
 
+  //   if(self.search === undefined){
+  //   self.search = "";
+  //   self.getData();
+  //   console.log("banana")
+  // }
+
+
+    self.change = function(){
+      self.getData()
+    console.log('booboo')
+  };
+  
 }

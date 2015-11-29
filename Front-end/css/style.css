@@ -5,6 +5,11 @@
   overflow-y: scroll;
   margin: 0 auto;
   background-color: blue;
+  color: white;
+}
+
+.details {
+  padding-left: 10px;
 }
 
 .info-container img {
@@ -46,6 +51,7 @@
 
 .details-header {
   margin-bottom: 5px;
+  margin-top: 10px;
 }
 
 .subheader-container {
@@ -54,4 +60,15 @@
 
 .details-image {
   width: 200px;
+  margin-top: 16px;
+}
+
+.description {
+  display: inline-block;
+  width: 500px;
+  vertical-align: top
+}
+
+.searcher {
+  background-color: white;
 }
