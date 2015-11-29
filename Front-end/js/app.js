@@ -21,12 +21,16 @@ function MainRouter($stateProvider, $urlRouterProvider) {
             $scope.author = $stateParams.author;
             $scope.published = $stateParams.published;
             $scope.tags = $stateParams.tags;
+            $scope.link = $stateParams.link
+            $scope.description = $stateParams.description
         },
         params: {
           picture: null,
           author: null,
           published: null,
-          tags: null
+          tags: null,
+          link: null,
+          description: null
         }
     })
 
