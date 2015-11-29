@@ -1,7 +1,7 @@
 <div class= "container">
   <h1 class = "md-display-2">{{title}}</h1>
-  <h1 class = "md-title"> Author: {{author.split(' ')[1].split('(')[1].split(')')[0]}} | Published: {{published}} </h1>
-  <img src = "{{picture}}">
+  <a class = "md-title" ng-href= "http://www.flickr.com/people/{{id}}"> Author: {{author.split(' ')[1].split('(')[1].split(')')[0]}} </a> | Published: {{published}} </h1>
+  <a ng-href = "{{link}}"><img src = "{{picture}}"></a>
   <h1>{{description}}</h1>
   <h1>{{tags}}</h1>
 
